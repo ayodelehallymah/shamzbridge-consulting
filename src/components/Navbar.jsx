@@ -34,7 +34,7 @@ const Navbar = () => {
   return (
     <nav className="bg-blue-600 p-4 fixed top-0 w-full z-30 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
-        <Link to="hero" smooth={true} duration={500} className="text-white text-lg font-bold cursor-pointer">
+        <Link to="hero" smooth={true} duration={500} className="text-white text-lg font-bold cursor-pointer" onClick={() => handleLinkClick('hero')}>
           Shamzbridge Consulting
         </Link>
         <div className="hidden md:flex space-x-4">
