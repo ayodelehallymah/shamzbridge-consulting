@@ -34,7 +34,7 @@ const Navbar = () => {
   return (
     <nav className="bg-blue-600 p-4 fixed top-0 w-full z-30 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
-        <Link to="hero" smooth={true} duration={500} className="text-white text-lg font-bold">
+        <Link to="hero" smooth={true} duration={500} className="text-white text-lg font-bold cursor-pointer">
           Shamzbridge Consulting
         </Link>
         <div className="hidden md:flex space-x-4">
@@ -42,7 +42,7 @@ const Navbar = () => {
             to="hero"
             smooth={true}
             duration={500}
-            className={`text-white hover:text-yellow-300 ${activeSection === 'hero' ? 'text-yellow-300 font-semibold' : ''}`}
+            className={`text-white hover:text-yellow-300 cursor-pointer ${activeSection === 'hero' ? 'text-yellow-300 font-semibold' : ''}`}
             onClick={() => handleLinkClick('hero')}
           >
             Home
@@ -51,7 +51,7 @@ const Navbar = () => {
             to="about"
             smooth={true}
             duration={500}
-            className={`text-white hover:text-yellow-300 ${activeSection === 'about' ? 'text-yellow-300 font-semibold' : ''}`}
+            className={`text-white hover:text-yellow-300 cursor-pointer ${activeSection === 'about' ? 'text-yellow-300 font-semibold' : ''}`}
             onClick={() => handleLinkClick('about')}
           >
             About Us
@@ -60,7 +60,7 @@ const Navbar = () => {
             to="services"
             smooth={true}
             duration={500}
-            className={`text-white hover:text-yellow-300 ${activeSection === 'services' ? 'text-yellow-300 font-semibold' : ''}`}
+            className={`text-white hover:text-yellow-300 cursor-pointer ${activeSection === 'services' ? 'text-yellow-300 font-semibold' : ''}`}
             onClick={() => handleLinkClick('services')}
           >
             Services
